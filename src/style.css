@@ -10,17 +10,31 @@ font-family: 'PT Sans', sans-serif;
   --background-color: #fbf9fa;
   --button-color: #ff5757;
 }
-.hero {
-  text-align: center;
-  padding: 160px 20px;
-  background: var(--background-color);
-}
+
 h1 {
   font-family: var(--main-font-family);
   font-size: 96px;
   font-weight: bold;
   margin-bottom: 8px;
   margin-top: 0px;
+}
+h2 {
+  font-size: 54px;
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  margin-top: 0;
+  line-height: 1.2;
+}
+p {
+  font-weight: normal;
+  font-size: 20px;
+  font-family: var(--default-font-family);
+  line-height: 30px;
+}
+.hero {
+  text-align: center;
+  padding: 160px 20px;
+  background: var(--background-color);
 }
 .hero p {
   font-family: var(--default-font-family);
@@ -43,7 +57,18 @@ h1 {
   background: var(--button-color);
   color: #fff;
   font-family: var(--default-font-family);
+  font-size: 18px;
 }
 .btn-branding:hover {
-  background: var(--button-color);
+  background: #fff;
+  border: 1px solid var(--button-color);
+  color: var(--button-color);
+  transition: ease-in-out 0.2s;
+}
+
+img {
+  width: 600px;
+}
+.project-description {
+  padding: 120px 60px;
 }
