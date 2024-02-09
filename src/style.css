@@ -10,7 +10,9 @@ font-family: 'PT Sans', sans-serif;
   --background-color: #fbf9fa;
   --button-color: #ff5757;
 }
-
+body {
+  margin-bottom: 48px;
+}
 h1 {
   font-family: var(--main-font-family);
   font-size: 96px;
