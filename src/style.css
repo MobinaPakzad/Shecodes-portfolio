@@ -3,6 +3,7 @@ font-family: 'Manrope', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'PT Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
+font-family: "Dancing Script", cursive;
 */
 :root {
   --main-font-family: "Playfair Display", serif;
@@ -27,12 +28,39 @@ h2 {
   margin-top: 0;
   line-height: 1.2;
 }
+h6 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 26px;
+}
 p {
   font-weight: normal;
   font-size: 20px;
   font-family: var(--default-font-family);
   line-height: 30px;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 10px;
+  font-family: var(--default-font-family);
+  font-size: 18px;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--button-color);
+}
+
 .hero {
   text-align: center;
   padding: 160px 20px;
@@ -97,6 +125,16 @@ img {
 
 .project-description {
   padding: 120px 60px;
+}
+@media (max-width: 576px) {
+  h6 {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  nav li {
+    margin-left: 5px;
+    font-size: 14px;
+  }
 }
 @media (max-width: 900px) {
   h1 {
